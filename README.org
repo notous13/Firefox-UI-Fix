@@ -11,7 +11,7 @@
 
 Windows users: Run with powershell ([[https://github.com/black7375/Firefox-UI-Fix/wiki/Compatibility-Issues-Solution#windows-7-powershell-script-not-works][Does not work at Win7?]])
    #+BEGIN_SRC powershell
-   Powershell -c "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iwr  https://raw.githubusercontent.com/notous13/Firefox-UI-Fix/master/install.sh -useb | iex"
+   Powershell -c "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iwr  https://raw.githubusercontent.com/notous13/Firefox-UI-Fix/master/install.ps1 -useb | iex"
    #+END_SRC
 
 
