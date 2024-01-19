@@ -568,7 +568,7 @@ select_distribution() {
     selectedDistribution="${distribution}"
     case "${distribution}" in
       "Original(default)") leptonBranch="master";       break;;
-      "Photon-Style")      leptonBranch="photon-style"; break;;
+      "Photon-Style")      leptonBranch="master"; break;;
       "Proton-Style")      leptonBranch="proton-style"; break;;
       "Update")            updateMode="true";           break;;
       *)                   echo "Invalid option, reselect please.";;

@@ -586,7 +586,7 @@ function Select-Distribution() {
     $local:selectedDistribution = Menu @("Original(default)", "Photon-Style", "Proton-Style", "Update")
     switch ( $selectedDistribution ) {
       "Original(default)" { $global:leptonBranch = "master"      ; $selected = $true }
-      "Photon-Style"      { $global:leptonBranch = "photon-style"; $selected = $true }
+      "Photon-Style"      { $global:leptonBranch = "master"; $selected = $true }
       "Proton-Style"      { $global:leptonBranch = "proton-style"; $selected = $true }
       "Update"            { $global:updateMode   = $true         ; $selected = $true }
       default             { Write-Host "Invalid option, reselect please." }
